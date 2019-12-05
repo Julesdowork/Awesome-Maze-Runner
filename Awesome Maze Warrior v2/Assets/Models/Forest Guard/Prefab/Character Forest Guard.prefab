@@ -1077,7 +1077,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100062}
-  m_LocalRotation: {x: 0.0000014267948, y: -0.0000004837327, z: 0.067330234, w: 0.99773073}
+  m_LocalRotation: {x: 0.0000014267949, y: -0.0000004837328, z: 0.06733024, w: 0.9977308}
   m_LocalPosition: {x: -1.3449936, y: 0.0000038146973, z: -0.0000052452087}
   m_LocalScale: {x: 0.99999845, y: 1.000001, z: 1.0000008}
   m_Children: []
@@ -2099,6 +2099,8 @@ GameObject:
   m_Component:
   - component: {fileID: 400122}
   - component: {fileID: 9500000}
+  - component: {fileID: 7943858880034631623}
+  - component: {fileID: 4474490044912199585}
   m_Layer: 0
   m_Name: Character Forest Guard
   m_TagString: Untagged
@@ -2115,7 +2117,7 @@ Transform:
   m_GameObject: {fileID: 100122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.054840565, y: -1.9896216, z: 1.8800983}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 400120}
   - {fileID: 400118}
@@ -2135,7 +2137,7 @@ Animator:
   m_GameObject: {fileID: 100122}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0f726104d6246a14285a059715a72e91, type: 3}
-  m_Controller: {fileID: 9100000, guid: 26a0ae4c3c1313142b870519c45f10fe, type: 2}
+  m_Controller: {fileID: 9100000, guid: d7b6fd6b873c3584b92b1d4dce2149af, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2144,3 +2146,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &7943858880034631623
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100122}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!65 &4474490044912199585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.53, y: 74.6, z: 16.7}
+  m_Center: {x: 0, y: 36.2, z: 0}
